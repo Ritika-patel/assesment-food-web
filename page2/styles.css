@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #FFF7AE , #FFABF6 );
+}
+
+.next{
+    display: flex;
+    gap: 50px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color:#FF7070;
+    padding: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.box div:nth-child(2){
+    letter-spacing: 7px;
+
+}
+.box button{
+    background-color: inherit;
+    border: none;
+}
+.head{
+    padding: 15px 0px 15px 0px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.grid{
+    display: flex;
+    gap: 25px;
+
+}
+
+.grid img{
+    height: 100%;
+    width: 100%;
+}
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    height: 100%;
+    width: 100%;
+}
+.imagestag{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.imagestag div{
+    height: 200px;
+    width: 230px;
+}
+.imgaefood{
+    height: 415px;
+    width: 230px;
+  
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 5px;;
+}
+.arrow img{
+    height: 17px;
+}
+
+@media only screen and (max-width: 1108px){
+    .next{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 40px;
+    }
+    .right{
+        align-items: center;
+        justify-content:center;
+    }
+    .left{
+        align-items: center;
+        justify-content:center;
+    }
+}

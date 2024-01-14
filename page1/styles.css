@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #FF7070;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Courier, monospace;
+    width: auto;
+    text-transform: capitalize;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar li {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.navbar img {
+    height: 30px;
+}
+
+.cancel {
+    display: none;
+
+}
+
+#hamburger {
+    display: block;
+
+}
+
+#hamburger img {
+    height: 20px;
+}
+
+.small-nav {
+    display: none;
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 54px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-div,
+.right-div {
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-div {
+    background-image: linear-gradient(to right, #FFF7AE, #FFD0D1 60%);
+    display: flex;
+}
+
+
+
+.loreum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 290px;
+    margin: auto;
+
+}
+
+.loreum p:first-child {
+    font: 2.7rem sans-serif;
+    font-weight: 550;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.loreum p:nth-child(2) {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 17px;
+}
+
+.loreum button {
+    background-color: #FF7070;
+    width: 200px;
+    padding: 10px 0px 10px 0px;
+    border: #FF7070;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media only screen and (max-width: 833px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .navbar{
+        padding: 0;
+    }
+}
